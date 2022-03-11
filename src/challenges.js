@@ -50,13 +50,13 @@ function highestCount(numeros) {
   }
 
 // Desafio 7
-function catAndMouse(cat1, cat2, mouse) {  //Match.abs dado no desafio 12 - valor absoluto de um número
-  let distanciaCat1 = Math.abs(cat1 - mouse);
-  let distanciaCat2 = Math.abs(cat2 - mouse);
-  if (distanciaCat1 < distanciaCat2) {
-    return 'cat1';
-  } else if (distanciaCat2 < distanciaCat1) {
+function catAndMouse(cat1, cat2, mouse) { 
+  let distanciaCat1 = (cat1 - mouse);
+  let distanciaCat2 = (cat2 - mouse);
+  if (Math.abs(distanciaCat2) < Math.abs(distanciaCat1)) {
     return 'cat2';
+  } else if (Math.abs(distanciaCat2) > Math.abs(distanciaCat1)) {
+    return 'cat1';
   } else {
     return 'os gatos trombam e o rato foge';
   }
