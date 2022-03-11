@@ -23,18 +23,14 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(names) {
-  let name = '';
-  let firstName = names[0];
-  let lastName = names[names.length - 1];
-  name = lastName +"," +firstName
+  let name = (`${names[names.length - 1]}, ${names[0]}`);
   return name;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let vitoria = 3 * wins;
-  let empate = 1 * ties;
-  let pontos = vitoria + empate;
+  let vitorias = 3 * wins;
+  let pontos = vitorias + ties;
   return pontos;
 }
 
