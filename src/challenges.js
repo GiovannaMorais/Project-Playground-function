@@ -40,7 +40,7 @@ function highestCount(numeros) {
   let maior = numeros[0];
   for (let i = 0; i < numeros.length; i += 1) {
     if (maior < numeros[i]) {
-      maior = i;
+      maior = numero[i];
     }
   }for(let repete in numeros){
     if (maior === numeros[repete]) {
@@ -60,7 +60,7 @@ function catAndMouse(cat1, cat2, mouse) {
   } else if (distanciaCat2 > distanciaCat1) {
     return 'cat1';
   }else {
-    
+
   return 'os gatos trombam e o rato foge'
   }
 }  
