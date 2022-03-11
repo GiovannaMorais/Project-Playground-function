@@ -40,7 +40,7 @@ function highestCount(numeros) {
   let maior = numeros[0];
   for (let i = 0; i < numeros.length; i += 1) {
     if (maior < numeros[i]) {
-      maior = numero[i];
+      maior = numeros[i];
     }
   }for(let repete in numeros){
     if (maior === numeros[repete]) {
