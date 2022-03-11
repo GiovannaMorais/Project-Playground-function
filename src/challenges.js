@@ -108,7 +108,7 @@ function decode (codigo){
 
 // Desafio 10
 function techList(tech,name) {
-  if(tech === 0){
+  if(tech.length === 0){
     return "Vazio!";
   }
   let tecnologies =[]
