@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(number1, number2) {
   if (number1 === true && number2 === true) {
-    true
+    return true
   } else {
-    false;
+   return false;
   }
 }
 
@@ -42,7 +42,7 @@ function footballPoints(wins, ties) {
 function highestCount(numeros) {
   let contador = 0;
   let maior = numeros[0];
-  for (i = 0; i < numeros.length; i += 1) {
+  for (let i = 0; i < numeros.length; i += 1) {
     if (maior < numeros[i]) {
       maior = i;
     }
