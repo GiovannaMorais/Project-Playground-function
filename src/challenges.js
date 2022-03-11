@@ -54,8 +54,16 @@ function highestCount(numeros) {
 }return contador
 }
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1,cat2,mouse) {
+  let distanciaCat1 = cat1 - mouse
+  let distanciaCat2 = cat2 - mouse 
+  if(distanciaCat1< distanciaCat2){
+    return "cat1"
+  }else if(distanciaCat2< distanciaCat1){
+    return "cat2"
+  }else{
+    return "os gatos trombam e o rato foge"
+  }
 }
 
 // Desafio 8
