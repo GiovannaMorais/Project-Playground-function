@@ -30,11 +30,15 @@ function concatName(names) {
   let lastName = names[names.length -1]
   name = lastName +","+ firstName;
   return name;
-}console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+}
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  let vitoria = 3*wins
+  let empate = 1*ties
+  let pontos = vitoria + empate
+  return pontos
+
 }
 
 // Desafio 6
