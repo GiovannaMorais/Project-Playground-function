@@ -108,9 +108,18 @@ function decode (codigo){
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(tech,name) {
+  let tecnologies =[]
+  tech.sort()
+  for(let index in tech){
+    tecnologies.push ({
+      tech:tech[index],
+      name,
+      
+    });
+    
+  }return tecnologies
+}console.log(techList(["React","DOM","Back-end","Front-end","Ciência da Computação"],"Giovanna"));
 
 module.exports = {
   calcArea,
