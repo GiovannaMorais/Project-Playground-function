@@ -8,7 +8,7 @@ function generatePhoneNumber(phone) {
      for(let i in phone){
    } if(phone.length > 11){
     return "Array com tamanho incorreto"
-  }else if (phone[i]< 0 || phone [i] > 9] || repetir >= 3){
+  }else if (phone[i]< 0 || phone [i] > 9 || repetir >= 3){
     return "não é possível gerar um número de telefone com esses valores";
   }
   }
