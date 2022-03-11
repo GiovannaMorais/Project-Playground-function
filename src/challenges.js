@@ -46,12 +46,13 @@ function highestCount(numeros) {
     if (maior < numeros[i]) {
       maior = i;
     }
-    if (maior === numeros[i]) {
+  }for(let repete in numeros){
+    if (maior === numeros[repete]) {
       contador += 1;
     }
+  }return contador;
   }
-  return contador;
-}
+
 // Desafio 7
 function catAndMouse(cat1, cat2, mouse) {  //Match.abs dado no desafio 12 - valor absoluto de um número
   let distanciaCat1 = Math.abs(cat1 - mouse);
