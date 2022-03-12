@@ -48,12 +48,12 @@ for(let index in phone){
 }
 
 // Desafio 13
-function hydrate(bebidas) {
-  let numero = bebidas.match(/[1-9]/g); //lista de números tirada da string
+function hydrate(bebidas) { //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/match - (comando match())
+  let numero = bebidas.match(/[1-9]/g); //lista de números tirada da string 
   let soma = 0;
   
   for (let index in numero) {
-    soma += Number(numero[index]);
+    soma += Number(numero[index]); //Number () força o que está nos parenteses a vira do tipo number
   }
 
   if (soma == 1) {
@@ -61,7 +61,7 @@ function hydrate(bebidas) {
   } else {
     return soma + " copos de água";
   }
-}console.log(hydrate("1 cerveja e 2 vodkas"))
+}
 module.exports = {
   generatePhoneNumber,
   hydrate,
