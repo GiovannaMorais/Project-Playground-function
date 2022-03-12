@@ -12,16 +12,21 @@ function generatePhoneNumber(phone) {
   }
   
 }
-  let phoneNumber= "";
-  let dd = "(" + phone[0] + phone[1] + ")"
+  let phoneNumber= [];
+  let dd = "(" + phone[0] + phone[1]
   let primeirosNum= phone[2] + phone [3]+ phone [4]+ phone [5]+ phone [6];
   let segundoNum = phone[7] + phone [8]+ phone [9]+ phone [10];
   phoneNumber.push( dd +" "+ primeirosNum +"-" +segundoNum)
-      return phoneNumber;
+      return phoneNumber
         }
       
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
-      }
+console.log(generatePhoneNumber(["3","4","9","9","1","9","9","1","5","1","2"]))
+  
+  
+  
+  
+  
+ 
 // Desafio 12
   function triangleCheck (lineA,lineB,lineC){
     let valor=Math.abs 
