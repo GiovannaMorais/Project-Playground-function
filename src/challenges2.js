@@ -49,17 +49,19 @@ for(let index in phone){
 
 // Desafio 13
 function hydrate(bebidas) {
-  let copos = /[1-9]/g;
-  let novaString = " ";
+  let numero = bebidas.match(/[1-9]/g); //lista de números tirada da string
+  let soma = 0;
+  
+  for (let index in numero) {
+    soma += Number(numero[index]);
+  }
 
-  if(bebidas.match(copos) == 1){
-    novaString=(bebidas.match(copos) + " " + "copo de água")
+  if (soma == 1) {
+    return "1 copo de água";
   } else {
-    novaString=(bebidas.match(copos) + " " + "copos de água")
-
-}  
-return novaString;
-}
+    return soma + " copos de água";
+  }
+}console.log(hydrate("1 cerveja e 2 vodkas"))
 module.exports = {
   generatePhoneNumber,
   hydrate,
