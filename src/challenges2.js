@@ -1,34 +1,32 @@
 // Desafio 11
 function generatePhoneNumber(phone) {
-  let posicao = phone[0]
-  let repetir = 0
-  for(let index in phone){
-   if(posicao === phone[index]){
-     repetir+=1
-   } if(phone > 11){
-    return "Array com tamanho incorreto"
-  }else if (phone[index]< 0 || phone [index] > 9 || repetir >= 3){
-    return "não é possível gerar um número de telefone com esses valores";
-  }
-  
-}
-  let phoneNumber= [];
-  let dd = "(" + phone[0] + phone[1]
-  let primeirosNum= phone[2] + phone [3]+ phone [4]+ phone [5]+ phone [6];
-  let segundoNum = phone[7] + phone [8]+ phone [9]+ phone [10];
-  phoneNumber.push( dd +" "+ primeirosNum +"-" +segundoNum)
-      return phoneNumber
-        }
-      
-console.log(generatePhoneNumber(["3","4","9","9","1","9","9","1","5","1","2"]))
-  
-  
-  
-  
-  
+ let dd= '('+ phone[0] + phone[1]+')';
+  let primeirosNum= ""+phone[2] + phone [3]+ phone [4]+ phone[5]+ phone[6];
+  let segundoNum = "" + phone[7] + phone [8]+ phone [9]+ phone[10]
+  let repetiçao=0;
  
+if(phone.length !== 11){
+  return "Array com tamanho incorreto."
+}
+for(let index in phone){
+  if(phone[index] < 0 || phone[index] > 9){
+    return "não é possível gerar um número de telefone com esses valores"
+  }
+  for(let repete in phone){
+    if(phone[repete] === phone[index]){
+      repetiçao+=1
+    }
+  }
+  if(repetiçao >= 3){
+    return "não é possível gerar um número de telefone com esses valores"
+  }else{
+    repetiçao = 0
+  }
+} return dd + " "  + primeirosNum + "-" + segundoNum;
+}
+
 // Desafio 12
-  function triangleCheck (lineA,lineB,lineC){
+  function triangleCheck (lineA,lineB,lineC){  
     let valor=Math.abs 
      let difBC =valor (lineB - lineC) < lineA
     let difAB = valor(lineA - lineB) < lineC
@@ -67,3 +65,4 @@ module.exports = {
   hydrate,
   triangleCheck,
 };
+
