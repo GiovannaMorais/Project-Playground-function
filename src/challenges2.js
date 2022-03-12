@@ -49,8 +49,8 @@ for(let index in phone){
 
 // Desafio 13
 function hydrate(bebidas) { //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/match - (comando match())
-  let numero = bebidas.match(/[1-9]/g); //lista de números tirada da string 
-  let soma = 0;
+  let numero = bebidas.match(/[1-9]/g); //Todas os números de 1 a 9  são retornados, com cada número sendo um elemento string no array.( lista de números tirada da string)
+  let soma = 0;                         
   
   for (let index in numero) {
     soma += Number(numero[index]); //Number () força o que está nos parenteses a vira do tipo number
